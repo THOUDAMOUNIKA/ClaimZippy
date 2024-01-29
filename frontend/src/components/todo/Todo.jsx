@@ -56,7 +56,7 @@ const Todo = () => {
 
     const del= async (Cardid) => {
         if(id){
-            await axios.delete(`http://localhost:1000/api/v2/deleteTask/${Cardid}`,
+            await axios.delete(``${window.location.origin}/api/v2/deleteTask/${Cardid}`,
         {
             data: {id:id},
         })
